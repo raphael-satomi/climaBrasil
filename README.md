@@ -15,6 +15,12 @@
 <img src="assets/img/imagem-exemplo2.png" width="400" height="270">
 
 ---
+
+# Linguagens utilizadas
+- PHP
+- JS e jQuery
+
+---
 ## Contribuidores
 
 - Raphael Satomi Gomes de Andrade <raphaelsatomi@gmail.com>
