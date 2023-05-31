@@ -1,0 +1,232 @@
+:root{
+    /* Capitals positions */
+    
+    /* SP */
+    --position-top-sp: 70%;
+    --position-right-sp: 34.6%;
+
+    /* RJ */
+    --position-top-rj: 70%;
+    --position-right-rj: 29%;
+
+    /* AC */
+    --position-top-ac: 40%;
+    --position-right-ac: 68%;
+
+    /* RO */
+    --position-top-ro: 37%;
+    --position-right-ro: 61%;
+
+    /* RR */
+    --position-top-rr: 12%;
+    --position-right-rr: 56%;
+
+    /* PA */
+    --position-top-pa: 21%;
+    --position-right-pa: 36%;
+
+    /* AM */
+    --position-top-am: 24%;
+    --position-right-am: 54%;
+
+    /* AP */
+    --position-top-ap: 17%;
+    --position-right-ap: 41.5%;
+
+    /* TO */
+    --position-top-to: 41%;
+    --position-right-to: 37%;
+
+    /* PB */
+    --position-top-pb: 33.5%;
+    --position-right-pb: 14%;
+
+    /* PI */
+    --position-top-pi: 30%;
+    --position-right-pi: 27.5%;
+
+    /* RN */
+    --position-top-rn: 31%;
+    --position-right-rn: 15%;
+
+    /* MA */
+    --position-top-ma: 23%;
+    --position-right-ma: 30%;
+
+    /* PE */
+    --position-top-pe: 38%;
+    --position-right-pe: 16%;
+
+    /* CE */
+    --position-top-ce: 25%;
+    --position-right-ce: 21%;
+
+    /* BA */
+    --position-top-ba: 48%;
+    --position-right-ba: 20.5%;
+
+    /* SE */
+    --position-top-se: 44%;
+    --position-right-se: 18%;
+
+    /* AL */
+    --position-top-al: 41%;
+    --position-right-al: 16%;
+
+    /* RS */
+    --position-top-rs: 87%;
+    --position-right-rs: 42%;
+
+    /* SC */
+    --position-top-sc: 80%;
+    --position-right-sc: 38%;
+
+    /* PR */
+    --position-top-pr: 73%;
+    --position-right-pr: 42%;
+
+    /* GO */
+    --position-top-go: 55%;
+    --position-right-go: 41%;
+
+    /* MT */
+    --position-top-mt: 50%;
+    --position-right-mt: 49%;
+
+    /* MS */
+    --position-top-ms: 63%;
+    --position-right-ms: 47%;
+
+    /* DF */
+    --position-top-df: 51%;
+    --position-right-df: 35%;
+
+    /* MG */
+    --position-top-mg: 61%;
+    --position-right-mg: 31%;
+
+    /* ES */
+    --position-top-es: 63%;
+    --position-right-es: 24.5%;
+}
+
+/* Capitals positions */
+.icon:hover {
+    scale: 1.3;
+    z-index: 1;
+    cursor: pointer;
+}
+.icon[state='PB'],
+.icon[state='PE'],
+.icon[state='SE'] {
+    display: none;
+}
+.icon[state='SP'] {
+    top: var(--position-top-sp);
+    right: var(--position-right-sp);
+}
+.icon[state='RJ'] {
+    top: var(--position-top-rj);
+    right: var(--position-right-rj);
+}
+.icon[state='AC'] {
+    top: var(--position-top-ac);
+    right: var(--position-right-ac);
+}
+.icon[state='RO'] {
+    top: var(--position-top-ro);
+    right: var(--position-right-ro);
+}
+.icon[state='RR'] {
+    top: var(--position-top-rr);
+    right: var(--position-right-rr);
+}
+.icon[state='PA'] {
+    top: var(--position-top-pa);
+    right: var(--position-right-pa);
+}
+.icon[state='AM'] {
+    top: var(--position-top-am);
+    right: var(--position-right-am);
+}
+.icon[state='AP'] {
+    top: var(--position-top-ap);
+    right: var(--position-right-ap);
+}
+.icon[state='TO'] {
+    top: var(--position-top-to);
+    right: var(--position-right-to);
+}
+.icon[state='PB'] {
+    top: var(--position-top-pb);
+    right: var(--position-right-pb);
+    white-space: nowrap;
+}
+.icon[state='PI'] {
+    top: var(--position-top-pi);
+    right: var(--position-right-pi);
+}
+.icon[state='RN'] {
+    top: var(--position-top-rn);
+    right: var(--position-right-rn);
+}
+.icon[state='MA'] {
+    top: var(--position-top-ma);
+    right: var(--position-right-ma);
+}
+.icon[state='PE'] {
+    top: var(--position-top-pe);
+    right: var(--position-right-pe);
+}
+.icon[state='CE'] {
+    top: var(--position-top-ce);
+    right: var(--position-right-ce);
+}
+.icon[state='BA'] {
+    top: var(--position-top-ba);
+    right: var(--position-right-ba);
+}
+.icon[state='SE'] {
+    top: var(--position-top-se);
+    right: var(--position-right-se);
+}
+.icon[state='AL'] {
+    top: var(--position-top-al);
+    right: var(--position-right-al);
+}
+.icon[state='RS'] {
+    top: var(--position-top-rs);
+    right: var(--position-right-rs);
+}
+.icon[state='SC'] {
+    top: var(--position-top-sc);
+    right: var(--position-right-sc);
+}
+.icon[state='PR'] {
+    top: var(--position-top-pr);
+    right: var(--position-right-pr);
+}
+.icon[state='GO'] {
+    top: var(--position-top-go);
+    right: var(--position-right-go);
+}
+.icon[state='MT'] {
+    top: var(--position-top-mt);
+    right: var(--position-right-mt);
+}
+.icon[state='MS'] {
+    top: var(--position-top-ms);
+    right: var(--position-right-ms);
+}
+.icon[state='DF'] {
+    top: var(--position-top-df);
+    right: var(--position-right-df);
+}
+.icon[state='MG'] {
+    top: var(--position-top-mg);
+    right: var(--position-right-mg);
+}
+.icon[state='ES'] {
+    top: var(--position-top-es);
+    right: var(--position-right-es);
+}

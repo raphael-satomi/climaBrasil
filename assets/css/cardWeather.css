@@ -1,0 +1,114 @@
+:root {
+    --drop-size: 18px;
+}
+
+/* Background Card */
+body[cardShowActive="1"] .backgroundCardShow {
+    background-color: #000000e3;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+.card {
+    position: absolute;
+    top: calc(50% - 200px);
+    left: calc(50% - 120px);
+    z-index: 2;
+}
+
+.localization {
+    font-weight: bold;
+    font-size: 21px;
+}
+.card {
+    background-color: #efefef;
+    width: calc( 100% - 32px);
+    max-width: 240px;
+    border-radius: 7px;
+    border: 2px solid #ccc;
+}
+.card .int-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 16px 32px 16px;
+}
+
+.weatherData {
+    width: 100%;
+    font-size: 17px;
+}
+.card .maxMinWeather,
+.card .maxMinWeather .maxWeather,
+.card .maxMinWeather .minWeather{
+    display: flex;
+    font-weight: 500;
+    align-items: center;
+}
+.card .maxMinWeather {
+    justify-content: center;
+    font-size: 21px;
+}
+.card .maxMinWeather div {
+    padding: 0 10px;
+}
+.card .maxMinWeather .maxWeather::before,
+.card .maxMinWeather .minWeather::before{
+    content: '';
+    background: url('../img/arrowMax.png');
+    background-size: 15px;
+    height: 15px;
+    width: 15px;
+    display: block;
+}
+.card .maxMinWeather .minWeather::before {
+    background: url('../img/arrowMin.png');
+    background-size: 15px;
+    transform: rotate(180deg);
+}
+.iconWeather {
+    width: 75%;
+    height: auto;
+    padding: 16px 0;
+}
+.weatherData .pctRain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.drops {
+    display: flex;
+    padding: 16px 0;
+}
+.drops::before {
+    content: '';
+    background: url('../img/dropGray.png');
+    display: block;
+    background-size: 15px;
+    height: var(--drop-size);
+    width: 56px;
+    background-size: var(--drop-size) var(--drop-size);
+    margin-right: 10px;
+}
+
+.drops[qtdDrops="1"]::after,
+.drops[qtdDrops="2"]::after,
+.drops[qtdDrops="3"]::after {
+    content: '';
+    background: url('../img/dropBlue.png');
+    display: block;
+    height: 18px;
+    background-size: 18px 18px;
+    position: absolute;
+}
+.drops[qtdDrops="1"]::after {
+    width: var(--drop-size);
+}
+.drops[qtdDrops="2"]::after {
+    width: calc( var(--drop-size) * 2 );
+}
+.drops[qtdDrops="3"]::after {
+    width: calc( var(--drop-size) * 3 );
+}

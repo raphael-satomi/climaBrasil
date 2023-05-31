@@ -1,0 +1,81 @@
+:root{
+    --font-family-primary: 'Roboto', Arial;
+    --font-color-max-temperature: rgb(224, 97, 97);
+    --font-color-min-temperature: rgb(18 119 235);
+    --size-img-clima: 40px;
+    --text-shadow-weather-temperature: 2px 0 #e1e1e1, -2px 0 #e1e1e1, 0 2px #e1e1e1, 0 -2px #e1e1e1, 1px 1px #e1e1e1, -1px -1px #e1e1e1, 1px -1px #e1e1e1, -1px 1px #e1e1e1;
+}
+
+body{
+    font-family: var(--font-family-primary);
+    margin: 0;
+    padding: 0;
+    background-color: #4f4f4fd6;
+}
+svg, svg image {
+    width: 1200px;
+    height: 850px;
+}
+.map-brasil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map-brasil .int-map-brasil {
+    position: relative;
+}
+
+
+/* Estilo icone de clima */
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transition: 0.3s ease;
+}
+.int-icon {
+    position: relative;
+}
+.icon img {
+    width: var(--size-img-clima);
+    height: auto;
+}
+.data-temperature {
+    display: flex;
+    align-items: center;
+}
+.data-temperature .temperature-level{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: var(--size-img-clima);
+    margin-left: 4px;
+
+    font-size: 13px;
+    font-weight: bold;
+    text-shadow: var(--text-shadow-weather-temperature);
+}
+.temperature-level .max-temperature{
+    color: var(--font-color-max-temperature);
+}
+.temperature-level .min-temperature{
+    color: var(--font-color-min-temperature);
+}
+.data-temperature .state-name{
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    left: -25%;
+    width: 150%;
+    font-size: 13px;
+    text-shadow: var(--text-shadow-weather-temperature);
+}
+
+/* Card color :root */
+.card .maxMinWeather .minWeather {
+    color: var(--font-color-min-temperature);
+}
+.card .maxMinWeather .maxWeather {
+    color: var(--font-color-max-temperature);
+}
